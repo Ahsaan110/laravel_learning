@@ -32,7 +32,6 @@ Route::get('stdlist',[studentController::class,'index']);
 Route::controller(studentController::class)->group(function(){
     // Route::get('contactus','contact_controller');
     Route::get('contactus/{loc}','contact_controller');
-
     Route::get('aboutus','about_us_controller');
 });
 
